@@ -1,7 +1,7 @@
 ############################################################################################################
 #                                                                                                          #
 #                                                                                                          #
-#                            MÓDULO PARA CRIAÇÃO DA VPC - VIRTUAL PRIVATE CLOUD   :)                       #
+#                        MÓDULO PARA CRIAÇÃO DA VPC - VIRTUAL PRIVATE CLOUD [2 AZ'S] :)                    #
 #                                                                                                          #
 #                                                                                                          #
 ############################################################################################################
@@ -65,13 +65,12 @@ module "create_vpc" {
   default_tags = local.default_tags
 }
 
-
-/* 
-
-################### UM EXEMPLO COM 3 ZONAS DE DISPONIBILIDADE ###################
+/* ################### UM EXEMPLO COM 3 ZONAS DE DISPONIBILIDADE ###################
 
 OBS: No caso abaixo, temos um exemplo de 3 subnets públicas e 3 subnets privadas.
+
 Se trata de um /27 com 32 ranges por subnet. Este exemplo deve ser utilizado apenas para ambientes produtivos
+
 No caso de mais ranges por subnet, utilizar um /25 e estender para 64 ou 128 IP's.
 
 subnet_public = [
@@ -113,7 +112,4 @@ subnet_public = [
       map_public_ip_on_launch = "${"true"}"
     }
   ]
-
-
-
 */
