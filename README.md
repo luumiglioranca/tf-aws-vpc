@@ -23,7 +23,6 @@ O codigo irá prover os seguintes recursos na AWS.
 `Caso de uso`: Criando uma VPC com duas subnets publicas e duas privadas 
 
 ```bash
-
 locals {
   #Região escolhida
   region     = ""
@@ -41,6 +40,7 @@ locals {
   tag_true   = "true"
 
   #Algumas tags caso seja necessário
+
   #OBS: Se precisar criar uma política de TAG nova seguir: Conta Principal da sua organização > AWS Organizations > Polices > Tag policies > Create Policy :)
   default_tags = {
     Cliente  = ""
