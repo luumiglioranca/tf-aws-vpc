@@ -25,7 +25,7 @@ O codigo irá prover os seguintes recursos na AWS.
 ```bash
 locals {
   #Região escolhida
-  region     = ""
+  region     = "us-east-1"
   
   #Range de rede escolhido. Poderia escolher o cidr com /20, /21, /22, /23, /24 e etc...
   cidr_block = "10.10.10.10/24" 
@@ -34,7 +34,7 @@ locals {
   vpc_name   = "VPC-MODULE-TERRAFORM"
 
   #Conta da AWS que será provisionado o recurso
-  account_id = ""
+  account_id = "0917487109284"
 
   #Tag default true
   tag_true   = "true"
@@ -43,9 +43,9 @@ locals {
 
   #OBS: Se precisar criar uma política de TAG nova seguir: Conta Principal da sua organização > AWS Organizations > Polices > Tag policies > Create Policy :)
   default_tags = {
-    Cliente  = ""
-    Area     = ""
-    Ambiente = ""
+    Cliente  = "xpto"
+    Area     = "xpto"
+    Ambiente = "production"
   }
 }
 
