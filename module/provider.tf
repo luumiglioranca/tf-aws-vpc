@@ -27,7 +27,7 @@ terraform {
     bucket                      = "" 
 
     #Caminho da chave para o recurso que será criado
-    key                         = "caminho-da-chave/exemplo/vpc-peering/terraform.tfstate"
+    key                         = "caminho-da-chave/exemplo/terraform.tfstate"
 
     #Região onde será configurado seu recurso. Deixei us-east-1 como default
     region                      = "us-east-1" 
